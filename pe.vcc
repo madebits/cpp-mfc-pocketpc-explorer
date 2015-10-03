@@ -1,0 +1,84 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CPeDlg
+LastTemplate=CListCtrl
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "pe.h"
+
+ClassCount=3
+Class1=CPeApp
+Class2=CPeDlg
+
+ResourceCount=5
+Resource2=IDD_PE_DIALOG
+Resource3=IDD_PE_DIALOG (English (U.S.))
+Resource1=IDR_MAINFRAME
+Class3=PatchedCListCtrl
+Resource4=IDR_MENUBAR_POP (English (U.S.))
+Resource5=IDR_MENUBAR_POP
+
+[CLS:CPeApp]
+Type=0
+HeaderFile=pe.h
+ImplementationFile=pe.cpp
+Filter=N
+
+[CLS:CPeDlg]
+Type=0
+HeaderFile=peDlg.h
+ImplementationFile=peDlg.cpp
+Filter=D
+LastObject=ID_SHOW_THREADS
+BaseClass=CDialog
+VirtualFilter=dWC
+
+
+[DLG:IDD_PE_DIALOG]
+Type=1
+Class=CPeDlg
+ControlCount=3
+Control1=IDC_LIST,SysListView32,1350664221
+Control2=IDC_BUTTON_REFRESH,button,1342242816
+Control3=IDC_STATIC_COUNT,static,1342308352
+
+[DLG:IDD_PE_DIALOG (English (U.S.))]
+Type=1
+Class=CPeDlg
+ControlCount=3
+Control1=IDC_LIST,SysListView32,1350664221
+Control2=IDC_BUTTON_REFRESH,button,1342242816
+Control3=IDC_STATIC_COUNT,static,1342308352
+
+[MNU:IDR_MENUBAR_POP (English (U.S.))]
+Type=1
+Class=CPeDlg
+Command1=ID_POP_VIEWMODULES
+Command2=ID_SHOWMEMORY
+Command3=ID_POP_KILLPROCESS
+Command4=ID_SHOWWIND
+Command5=ID_SHOWINFO
+CommandCount=5
+
+[CLS:PatchedCListCtrl]
+Type=0
+HeaderFile=PatchedCListCtrl.h
+ImplementationFile=PatchedCListCtrl.cpp
+BaseClass=CListCtrl
+Filter=W
+
+[MNU:IDR_MENUBAR_POP]
+Type=1
+Class=?
+Command1=ID_POP_VIEWMODULES
+Command2=ID_SHOWMEMORY
+Command3=ID_SHOWPROCESSWINS
+Command4=ID_POP_KILLPROCESS
+Command5=ID_SHOW_THREADS
+Command6=ID_SHOWWIND
+Command7=ID_SHOWINFO
+Command8=ID_WIN_ACTIVATE
+Command9=ID_WIN_GOTOPROC
+CommandCount=9
+
